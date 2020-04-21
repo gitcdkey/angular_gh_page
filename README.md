@@ -1,6 +1,8 @@
 # Live demo
 https://gitcdkey.github.io/angular_gh_page/
 
+![grab-landing-page](https://github.com/gitcdkey/angular_gh_page/blob/master/work-demo.gif)
+
 # Covid19Api
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
