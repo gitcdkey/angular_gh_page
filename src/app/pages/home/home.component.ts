@@ -10,12 +10,10 @@ export class HomeComponent implements OnInit {
 
   constructor(private _covidService : CovidService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { this.getCountries(); }
+  getCountries() { this._covidService.countries().subscribe((data:Country[]) => { this.countries = data;})}
 
-  }
-
-  
-
+  countries : Country[];
 }
 
 export interface Country
