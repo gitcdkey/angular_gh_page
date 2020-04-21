@@ -1,1 +1,19 @@
-<p>home works!</p>
+<main *ngIf="countries">
+    <mat-form-field>
+        <mat-label>Filter by country</mat-label>
+        <input matInput [(ngModel)]="filter" (ngModelChange)="arrayFiltering()">
+    </mat-form-field>  
+
+      <mat-chip-list>
+        <mat-chip *ngFor="let c of countries" (click)="openBottomSheet(c)">{{ c.country }}</mat-chip>
+      </mat-chip-list>
+</main>
+
+
+<style>
+.search-row { padding: 10px;}
+mat-form-field { width: 100%;}
+mat-chip { margin: 10px 0 0 0; border-radius: 0;}
+mat-chip:hover { cursor: pointer;}
+main { background-color: white; min-height: 90vh; padding: 10px;}
+</style>
