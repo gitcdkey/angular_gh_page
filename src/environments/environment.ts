@@ -6,6 +6,11 @@ export const environment = {
   production: false
 };
 
+export const CovidApi = {
+  globalInfo : "https://coronavirus-19-api.herokuapp.com/all",
+  allCountries : "https://coronavirus-19-api.herokuapp.com/countries",
+} 
+
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
